@@ -59,14 +59,14 @@ namespace BankingSystem
             string username = txtUsername.Text;
             string password = txtPassword.Text;
 
-            // TEMPORARY LOGIN
             if (username == "admin" && password == "admin")
             {
                 MessageBox.Show("Admin Login Success");
-            }
-            else
-            {
-                MessageBox.Show("Invalid Username or Password");
+
+                AdminDashboard frm = new AdminDashboard();
+                frm.Show();
+
+                this.Hide();
             }
         }
     }

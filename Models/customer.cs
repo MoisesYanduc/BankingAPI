@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BankingSystem.Models
 {
-    public class PendingAccount
+    public class Customer
     {
         public int Id { get; set; }
 
@@ -16,7 +16,7 @@ namespace BankingSystem.Models
 
         public string Contact { get; set; }
 
-        public decimal Deposit { get; set; }
+        public decimal Balance { get; set; }
 
         public string Address { get; set; }
 

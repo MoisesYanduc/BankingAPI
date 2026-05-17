@@ -56,6 +56,7 @@
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel6.Controls.Add(this.btnnotshow);
             this.panel6.Controls.Add(this.label3);
+            this.panel6.Controls.Add(this.btnshow);
             this.panel6.Controls.Add(this.pictureBox2);
             this.panel6.Controls.Add(this.lblPasschk);
             this.panel6.Controls.Add(this.txtPassword);
@@ -71,7 +72,7 @@
             this.btnnotshow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnnotshow.FlatAppearance.BorderSize = 0;
             this.btnnotshow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnnotshow.Location = new System.Drawing.Point(22, 23);
+            this.btnnotshow.Location = new System.Drawing.Point(21, 23);
             this.btnnotshow.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnnotshow.Name = "btnnotshow";
             this.btnnotshow.Size = new System.Drawing.Size(22, 20);
@@ -129,7 +130,7 @@
             this.btnshow.FlatAppearance.BorderSize = 0;
             this.btnshow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnshow.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.btnshow.Location = new System.Drawing.Point(137, 214);
+            this.btnshow.Location = new System.Drawing.Point(21, 25);
             this.btnshow.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnshow.Name = "btnshow";
             this.btnshow.Size = new System.Drawing.Size(22, 18);
@@ -218,7 +219,6 @@
             this.label1.Size = new System.Drawing.Size(196, 21);
             this.label1.TabIndex = 8;
             this.label1.Text = "No account? Register here";
-            this.label1.Visible = false;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnLogin
@@ -249,7 +249,6 @@
             this.ClientSize = new System.Drawing.Size(571, 398);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnshow);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.btnExit);

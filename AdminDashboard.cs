@@ -21,5 +21,42 @@ namespace BankingSystem
         {
 
         }
+
+        private void btnPending_Click(object sender, EventArgs e)
+        {
+            PendingAccountPanel frm =
+      new PendingAccountPanel();
+
+            OpenPanel(frm);
+        }
+        private void OpenPanel(Form frm)
+        {
+            panelContent.Controls.Clear();
+
+            frm.TopLevel = false;
+            frm.Dock = DockStyle.Fill;
+
+            panelContent.Controls.Add(frm);
+
+            frm.Show();
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show(
+        "Are you sure you want to logout?",
+        "Logout",
+        MessageBoxButtons.YesNo,
+        MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                LoginForm frm = new LoginForm();
+
+                frm.Show();
+
+                this.Hide();
+            }
+        }
     }
 }
