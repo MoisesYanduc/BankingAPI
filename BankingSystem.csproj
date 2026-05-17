@@ -66,6 +66,7 @@
     </Compile>
     <Compile Include="Models\customer.cs" />
     <Compile Include="Models\PendingAccount.cs" />
+    <Compile Include="PendingAccount.cs" />
     <Compile Include="PendingAccountPanel.cs">
       <SubType>Form</SubType>
     </Compile>
