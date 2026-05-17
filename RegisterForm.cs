@@ -16,5 +16,23 @@ namespace BankingSystem
         {
             InitializeComponent();
         }
+
+        private void RegisterForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Account application submitted successfully!\nWaiting for admin approval.");
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            LoginForm frm = new LoginForm();
+            frm.Show();
+
+            this.Hide();
+        }
     }
 }

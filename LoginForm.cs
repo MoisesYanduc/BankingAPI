@@ -43,7 +43,10 @@ namespace BankingSystem
 
         private void label1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Open Register Form");
+            RegisterForm frm = new RegisterForm();
+            frm.Show();
+
+            this.Hide();
         }
 
         private void btnExit_Click(object sender, EventArgs e)
